@@ -20,6 +20,10 @@ The project is served here: `http://localhost:4200`.
 
 `ng compodoc`: Runs development server on documentation server, and is served here: `http://localhost:8080`. 
 
+## Project reflection
+
+Epimaps project reflection (PDF): https://goo.gl/TgwGYK
+
 ## Acknolwedgments
 
 - Angular framework

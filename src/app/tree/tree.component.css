@@ -1,0 +1,153 @@
+/* switching between mobile and desktop */
+/*@media (max-width: 575px) {*/
+  /*.tree-nodes-mobile, .page-switcher-mobile, .expand-branch-mobile {*/
+    /*display: inline-block;*/
+  /*}*/
+
+  /*.tree-nodes, .page-switcher, .nav-separator {*/
+    /*display: none !important;*/
+  /*}*/
+
+  /*.tree-nodes-mobile {*/
+    /*margin: 20px auto 60px auto;*/
+  /*}*/
+/*}*/
+
+@media (min-width: 576px) {
+  .tree-nodes-mobile, .page-switcher-mobile, .expand-branch-mobile {
+    display: none !important;
+  }
+
+  .tree-nodes, .page-switcher {
+    display: inline-block;
+  }
+
+  .tree-nodes {
+    margin: 20px auto 0px auto;
+  }
+}
+
+.tree-nodes, .tree-nodes-mobile {
+  min-height: calc(100vh - 53px - 20px - 2px); /** navbar and the top and btm margins and extra **/
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 20px auto 0px auto; /** originally only in min-width: 576px **/
+}
+
+.tree-nodes > .card {
+  background-color: #33691EA0;
+  width: 200px;
+  height: 70px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.tree-nodes p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.background-circle {
+  color: #333333;
+}
+
+.flipped {
+  padding: 1em;
+}
+
+.options-separator {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/*.expand-branch-mobile {*/
+  /*position: fixed;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*width: 100%;*/
+  /*height: 60px;*/
+  /*margin: auto;*/
+  /*padding: 10px;*/
+  /*background-color: #FFFFFF;*/
+  /*overflow: hidden;*/
+/*}*/
+
+/*.expand-branch-mobile > .fa-stack {*/
+  /*float: right;*/
+  /*width: 10%;*/
+/*}*/
+
+/*.expand-branch-mobile > span:first-child {*/
+  /*float: left;*/
+  /*width: 90%;*/
+  /*font-size: 0.8em;*/
+  /*font-weight: 800;*/
+  /*display: -webkit-box; !** this is for multiline clipping *!*/
+  /*-webkit-line-clamp: 2;*/
+  /*-webkit-box-orient: vertical;*/
+  /*overflow: hidden;*/
+/*}*/
+
+.tree-nodes-mobile .fa-stack {
+  bottom: 10px;
+}
+
+.page-switcher-mobile {
+  position: absolute;
+  top: 300px;
+  right: 15px;
+}
+
+.page-switcher-mobile i:first-child {
+  display: block;
+}
+
+.page-switcher-mobile i {
+  transition: all .2s ease-in-out;
+  color: black;
+}
+
+.page-switcher-mobile i:hover {
+  transform: scale(1.2);
+  color: #2e7d32;
+}
+
+.page-switcher-mobile i:active {
+  transform: scale(0.8);
+  color: #1b5e20;
+}
+
+.flipped i {
+  bottom: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.flipped i:hover {
+  transform: scale(1.2);
+}
+
+.flipped i:active {
+  transform: scale(0.9);
+}
+
+.flipped span:nth-child(1) i{
+  left: -20px;
+}
+
+.flipped span:nth-child(3) i{
+  left: 20px;
+}
+
+.vertical-line {
+  height: 40px;
+  width: 1px;
+  border-left: 1px dashed black;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}

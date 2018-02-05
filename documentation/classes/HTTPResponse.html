@@ -1,0 +1,916 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>epimap documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">epimap documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">epimap documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/NavbarComponent.html" >NavbarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SearchComponent.html" >SearchComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SummaryComponent.html" >SummaryComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeComponent.html" >TreeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeComponent.html" >TreeNodeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeExpandedComponent.html" >TreeNodeExpandedComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeMobileComponent.html" >TreeNodeMobileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TrendingComponent.html" >TrendingComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/TagCloudDirective.html" >TagCloudDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/CurrentTree.html" >CurrentTree</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HTTPResponse.html"  data-type="entity-link" class="active" >HTTPResponse</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/TagStyle.html" >TagStyle</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/TreeNode.html" >TreeNode</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/ApiService.html" >ApiService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/CommunicationService.html" >CommunicationService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/SummaryService.html" >SummaryService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/TreeService.html" >TreeService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">epimap documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/NavbarComponent.html" >NavbarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SearchComponent.html" >SearchComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SummaryComponent.html" >SummaryComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeComponent.html" >TreeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeComponent.html" >TreeNodeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeExpandedComponent.html" >TreeNodeExpandedComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeMobileComponent.html" >TreeNodeMobileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TrendingComponent.html" >TrendingComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/TagCloudDirective.html" >TagCloudDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/CurrentTree.html" >CurrentTree</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HTTPResponse.html"  data-type="entity-link" class="active" >HTTPResponse</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/TagStyle.html" >TagStyle</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/TreeNode.html" >TreeNode</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/ApiService.html" >ApiService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/CommunicationService.html" >CommunicationService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/SummaryService.html" >SummaryService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/TreeService.html" >TreeService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>HTTPResponse</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/api.service.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#data">data</a>
+                                    </li>
+                                    <li>
+                                        <a href="#error">error</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#getData">getData</a>
+                                    </li>
+                                    <li>
+                                        <a href="#getError">getError</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor()</code>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/api.service.ts:174</a></div>
+                                        </td>
+                                    </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="getData"></a>
+                                    <span class="name">
+                                        <b>
+                                        getData
+                                        </b>
+                                        <a href="#getData"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>getData()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/app/api.service.ts:183</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="getError"></a>
+                                    <span class="name">
+                                        <b>
+                                        getError
+                                        </b>
+                                        <a href="#getError"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>getError()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/app/api.service.ts:182</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="data"></a>
+                                    <span class="name">
+                                        <b>
+                                        data
+                                        </b>
+                                        <a href="#data"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>data:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="174" class="link-to-prism">src/app/api.service.ts:174</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="error"></a>
+                                    <span class="name">
+                                        <b>
+                                        error
+                                        </b>
+                                        <a href="#error"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>error:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/app/api.service.ts:173</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+            </section>
+
+    </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import {Injectable, OnInit} from &#x27;@angular/core&#x27;;
+import {HttpClient} from &#x27;@angular/common/http&#x27;;
+import {Observable} from &#x27;rxjs/Observable&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
+
+
+@Injectable()
+export class ApiService implements OnInit {
+  API_URL &#x3D; &#x27;http://localhost:3000/api/wikipedia/article&#x27;;
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit() {
+
+  }
+
+  /**
+   * @description This must precede all requests where a query is involved
+   * @param {string} query
+   * @return {Observable&lt;HTTPResponse&gt;}
+   * @private
+   */
+  _getCanonicalURL(query: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt;this.http.post(&#x60;${this.API_URL}/canonical&#x60;, { &#x27;query&#x27;: query } );
+  }
+
+  /**
+   * @description Check if article exists.
+   * @param {string} query Valid search term string.
+   * @return {Observable&lt;Observable&lt;HTTPResponse&gt;&gt;}
+   */
+  articleExists(query: string): Observable&lt;Observable&lt;HTTPResponse&gt;&gt; {
+    return &lt;Observable&lt;Observable&lt;HTTPResponse&gt;&gt;&gt; this._getCanonicalURL(query).map((response) &#x3D;&gt; {
+      // console.log(response);
+      if (!response.error) {
+        return this.http.post(&#x60;${this.API_URL}/exists&#x60;, { &#x27;url&#x27;:  response.data });
+      } else {
+        return response.error;
+      }
+    });
+  }
+
+  /**
+   * @description Get images associated with Wikipedia article.
+   * @param {string} query Valid search term string.
+   * @return {Observable&lt;Observable&lt;HTTPResponse&gt;&gt;}
+   */
+  getImages(query: string): Observable&lt;Observable&lt;HTTPResponse&gt;&gt; {
+    return &lt;Observable&lt;Observable&lt;HTTPResponse&gt;&gt;&gt; this._getCanonicalURL(query).map((response) &#x3D;&gt; {
+      if (!response.error) {
+        return this.http.post(&#x60;${this.API_URL}/images&#x60;, { &#x27;url&#x27;:  response.data });
+      } else {
+        return response.error;
+      }
+    });
+  }
+
+  /**
+   * @description Fetch summary of Wikipedia article.
+   * @param {string} query Valid search term string.
+   * @return {Observable&lt;Observable&lt;HTTPResponse&gt;&gt;}
+   */
+  getSummary(query: string): Observable&lt;Observable&lt;HTTPResponse&gt;&gt; {
+    return &lt;Observable&lt;Observable&lt;HTTPResponse&gt;&gt;&gt; this._getCanonicalURL(query).map((response) &#x3D;&gt; {
+      if (!response.error) {
+        return this.http.post(&#x60;${this.API_URL}/summary&#x60;, { &#x27;url&#x27;:  response.data });
+      } else {
+        return response.error;
+      }
+    });
+  }
+
+  /**
+   * @description Fetch thumbnail of Wikipedia article. Note
+   * that this can sometimes fetch something that doesn&#x27;t
+   * visually match the article. The API is provided by
+   * Wikipedia and there may be errors.
+   * @param {string} query Valid search term string.
+   * @return {Observable&lt;Observable&lt;HTTPResponse&gt;&gt;}
+   */
+  getThumbnail(query: string): Observable&lt;Observable&lt;HTTPResponse&gt;&gt; {
+    return &lt;Observable&lt;Observable&lt;HTTPResponse&gt;&gt;&gt; this._getCanonicalURL(query).map((response) &#x3D;&gt; {
+      if (!response.error) {
+        return this.http.post(&#x60;${this.API_URL}/thumbnail&#x60;, { &#x27;url&#x27;:  response.data });
+      } else {
+        return response.error;
+      }
+    });
+  }
+
+  /**
+   * @description Fetches tree structure containing parsed navbox
+   * of a Wikipedia article.
+   * @param {string} query Valid search term string.
+   * @return {Observable&lt;Observable&lt;HTTPResponse&gt;&gt;}
+   */
+  getTrees(query: string): Observable&lt;Observable&lt;HTTPResponse&gt;&gt; {
+    return &lt;Observable&lt;Observable&lt;HTTPResponse&gt;&gt;&gt; this._getCanonicalURL(query).map((response) &#x3D;&gt; {
+      if (!response.error) {
+        return this.http.post(&#x60;${this.API_URL}/trees&#x60;, { &#x27;url&#x27;:  response.data });
+      } else {
+        return response.error;
+      }
+    });
+  }
+
+  /** Standalone methods below that aren&#x27;t preceded by the getCanonicalURL method **/
+
+  /**
+   * @description Fetches trending searches at Google.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  getTrendingItems(): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt;this.http.get(&#x60;${this.API_URL}/trending&#x60;);
+  }
+
+  /**
+   * @description See whether article exists for search term. (SA &#x3D; standalone,
+   * not preceded by the getCanonicalURL method)
+   * @param {string} url Valid search term string.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  articleExistsSA(url: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt; this.http.post(&#x60;${this.API_URL}/exists&#x60;, { &#x27;url&#x27;:  url });
+  }
+
+  /**
+   * @description Get images associated with Wikipedia article. (SA &#x3D; standalone,
+   * not preceded by the getCanonicalURL method)
+   * @param {string} url Valid search term string.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  getImagesSA(url: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt; this.http.post(&#x60;${this.API_URL}/images&#x60;, { &#x27;url&#x27;:  url });
+  }
+
+  /**
+   * @description Fetch summary of Wikipedia article. (SA &#x3D; standalone,
+   * not preceded by the getCanonicalURL method)
+   * @param {string} url Valid search term string.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  getSummarySA(url: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt; this.http.post(&#x60;${this.API_URL}/summary&#x60;, { &#x27;url&#x27;:  url });
+  }
+
+  /**
+   * @description Fetch thumbnail of Wikipedia article. Note
+   * that this can sometimes fetch something that doesn&#x27;t
+   * visually match the article. The API is provided by
+   * Wikipedia and there may be errors. (SA &#x3D; standalone,
+   * not preceded by the getCanonicalURL method)
+   * @param {string} url Valid search term string.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  getThumbnailSA(url: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt; this.http.post(&#x60;${this.API_URL}/thumbnail&#x60;, { &#x27;url&#x27;:  url });
+  }
+
+  /**
+   * @description Fetches tree structure containing parsed navbox
+   * of a Wikipedia article. (SA &#x3D; standalone,
+   * not preceded by the getCanonicalURL method)
+   * @param {string} url Valid search term string.
+   * @return {Observable&lt;HTTPResponse&gt;}
+   */
+  getTreesSA(url: string): Observable&lt;HTTPResponse&gt; {
+    return &lt;Observable&lt;HTTPResponse&gt;&gt; this.http.post(&#x60;${this.API_URL}/trees&#x60;, { &#x27;url&#x27;:  url });
+  }
+}
+
+export class HTTPResponse {
+  error: any;
+  data: any;
+
+  constructor() {
+    this.error &#x3D; null;
+    this.data &#x3D; null;
+  }
+
+  /* For some reason, these don&#x27;t work */
+  getError(): any { return this.error; }
+  getData(): any { return this.data; }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

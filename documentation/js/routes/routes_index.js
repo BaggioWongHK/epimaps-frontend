@@ -1,0 +1,1 @@
+var ROUTES_INDEX = {"name":"<root>","kind":"module","className":"AppModule","children":[{"kind":"component","component":"SearchComponent","path":""},{"kind":"component","component":"TrendingComponent","path":"trending"},{"kind":"component","component":"TreeComponent","path":"tree"},{"kind":"component","component":"SummaryComponent","path":"summary"}]}

@@ -1,0 +1,113 @@
+/* switching between mobile and desktop */
+@media (max-width: 575px) {
+  .tree-nodes-mobile, .page-switcher-mobile, .expand-branch-mobile {
+    display: inline-block;
+  }
+
+  .tree-nodes, .page-switcher, .nav-separator {
+    display: none !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .tree-nodes-mobile, .page-switcher-mobile, .expand-branch-mobile {
+    display: none !important;
+  }
+
+  .tree-nodes, .page-switcher {
+    display: inline-block;
+  }
+}
+
+.tree-nodes, .tree-nodes-mobile {
+  margin: 20px auto 0px auto;
+  min-height: calc(100vh - 53px - 20px - 8px); /** navbar and the top and btm margins and extra **/
+  display: inline-block;
+  text-align: center;
+}
+
+.tree-nodes > .card {
+  background-color: #33691EA0;
+  width: 200px;
+  height: 70px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.tree-nodes-mobile  .card {
+  background-color: #33691EA0;
+  width: 300px;
+  height: 45px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.tree-nodes-mobile .card-body {
+  padding: 10px;
+}
+
+.tree-nodes p, .tree-nodes-mobile p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.background-circle {
+  color: #333333;
+}
+
+.flipped {
+  padding: 1em;
+}
+
+.options-separator {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.expand-branch-mobile {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  padding: 10px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.expand-branch-mobile > .fa-stack {
+  float: right;
+  width: 10%;
+}
+
+.expand-branch-mobile > span:first-child {
+  float: left;
+  width: 90%;
+  font-size: 0.8em;
+  font-weight: 800;
+  display: -webkit-box; /** this is for multiline clipping */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tree-nodes-mobile .fa-stack {
+  bottom: 10px;
+}
+
+.page-switcher-mobile {
+  position: absolute;
+  top: 300px;
+  right: 15px;
+}
+
+.page-switcher-mobile i:first-child {
+  display: block;
+}

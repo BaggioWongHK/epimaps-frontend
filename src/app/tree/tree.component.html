@@ -1,0 +1,23 @@
+<div [@fadeIn]>
+  <!--commenting these out these will not be developed-->
+  <!--tree nodes mobile-->
+  <!--<div class="tree-nodes-mobile">-->
+    <!--<app-tree-node-mobile *ngFor="let title of componentTitles"-->
+                          <!--[fullText]="title"></app-tree-node-mobile>-->
+  <!--</div>-->
+
+  <!--expanded mobile node-->
+  <!--<app-tree-node-expanded></app-tree-node-expanded>-->
+
+  <!--tree nodes-->
+  <div class="tree-nodes">
+    <app-tree-node *ngFor="let data of componentTitles; let index = index"
+                   [title]="data.text"
+                   [url]="(data.hasURL) ? data.href : null"
+                   [hasChildren]="data.hasChildren"
+                   [hasURL]="data.hasURL"
+                   [index]="index"
+                   [@fadeIn]
+    ></app-tree-node>
+  </div>
+</div>

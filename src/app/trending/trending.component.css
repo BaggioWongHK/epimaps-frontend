@@ -1,0 +1,22 @@
+.trending-cloud {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  height: calc(100vh - 53px - 40px - 10px); /** navbar, top and btm margins, extra **/
+  margin: 20px auto;
+  width: 95%;
+}
+
+.trending-cloud > span:first-child {
+  left: 100px;
+  position: relative;
+  top: 20px;
+}
+
+.trending-cloud span { /* initial load incorrect viewport height bug fix */
+  visibility: hidden;
+}
+
+.trending-cloud span:hover { /* can't apply :not(hover) because it affects tag placement */
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+}

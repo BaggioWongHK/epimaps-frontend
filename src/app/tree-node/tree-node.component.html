@@ -1,0 +1,28 @@
+<div class="card text-white"
+   (click)="flipCard()"
+   [ngClass]="{'bottom-pixel-fix': flipped}"
+>
+  <div *ngIf="flipped" class="card-body flipped" [@fadeIn]>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x background-circle"></i>
+      <i class="fa fa-tree fa-stack-1x fa-inverse"
+         [ngClass]="{'grayed-button': !hasChildren}"
+         (click)="(hasChildren) ? showTree($event) : null"
+      ></i>
+    </span>
+    <div class="vertical-line">&nbsp;</div>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-circle fa-stack-2x background-circle"></i>
+      <i class="fa fa-info fa-stack-1x fa-inverse"
+         [ngClass]="{'grayed-button': !hasURL}"
+         (click)="(hasURL) ? showSummary($event) : null"></i>
+    </span>
+  </div>
+  <ng-template #fullText>{{title}}</ng-template>
+  <div *ngIf="!flipped" class="card-body" [@fadeIn]
+       placement="bottom"
+       [ngbTooltip]="fullText"
+       container="body">
+    <p class="card-text">{{ title }}</p>
+  </div>
+</div>

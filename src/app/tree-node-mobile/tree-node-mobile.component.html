@@ -1,0 +1,16 @@
+<div (click)="toggleTree()">
+  <div class="card text-white"
+       (click)="expandText(fullText)">
+    <div class="card-body"><p class="card-text">{{ fullText }}</p></div>
+  </div>
+  <a class="subtree"
+     (click)="goToTree($event)">
+    <span class="fa-stack fa-lg"
+          *ngIf="showTree"
+          [@fade]
+    >
+      <i class="fa fa-circle fa-stack-2x background-circle"></i>
+      <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</div>

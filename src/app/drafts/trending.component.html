@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Epimaps</title>
+
+  <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="trending.component.css">
+
+  <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+  <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+  <div class="background-layer">
+    <div class="background-layer-opacity">
+      <!--navbar-->
+      <nav class="nav-bar">
+        <svg width="206px" height="35px" viewBox="0 0 206 45">
+          <g id="project-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g>
+              <text id="Epimaps" font-family="MuseoSlab-500, Museo Slab" font-size="36" font-weight="normal" fill="#000000">
+                <tspan x="54.248" y="34">Epimaps</tspan>
+              </text>
+              <g id="project-avatar">
+                <circle id="back-circle" fill="#000000" cx="22.5" cy="22.5" r="22.5"></circle>
+                <circle id="front-circle" fill="#FFFFFF" cx="22.5" cy="22.5" r="19.3965517"></circle>
+                <image id="tree-icon" x="11.637931" y="9.31034483" width="22.5" height="27.1551724" xlink:href="data:image/png;base64,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"></image>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </nav>
+
+      <script>
+        $(document).ready(function() { randomizedSpanPlacement(displayText, ".trending-cloud") });
+
+        const displayText = ["Cary Moon", "Anaheim Ducks", "Paul LePage", "Bond market", "Rie Flair", "Charlotte", "Patient Protection", "United States", "Dustin Brown ", "30 for 30", "Medicaid", "Jenny Durkan", "Los Angeles Kings", "Reuters", "Asia", "Democratic party", "North Carolina", "WWE", "LiAngelo Ball", "Europe", "ESPN", "Nick Shore", "Mayor of Charlotte", "Lonzo Ball", "California", "European Union", "Seattle", "National Hockey League", "University of California", "Maine", "Seattle Mayoral Election", "UCLA Bruins", "China", "Jerry Brown ", "2017"];
+
+        /**
+         * @description Takes two numbers and generates a random number
+         * between min and max [min, max).
+         * @param {number} min
+         * @param {number} max
+         * @return {number}
+         */
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        /**
+         * @description Tests if two DOM elements overlap each other.
+         * @param {DOMRect} rect1 What's returned from element.getBoundingClientRect().
+         * It looks something like this:
+         * {bottom: number, height: number, left: number, right: number,
+         * top: number, width: number, x: number, y: number}
+         * Note that 'top, right, bottom, left' are NOT the same as the CSS properties.
+         * Bottom measures the pixel distance from the top of the screen, and right
+         * from the left. height = bottom - top, width = right - left.
+         * @param {DOMRect} rect2
+         * @return {boolean}
+         */
+        function overlaps(rect1, rect2) {
+          var overlap = !(rect1.right < rect2.left ||
+                rect1.left > rect2.right ||
+                rect1.bottom < rect2.top ||
+                rect1.top > rect2.bottom)
+
+          return overlap;
+        }
+
+        /**
+         * @description This is the main routine that takes in an array of
+         * strings, and randomly places them in the block level element specified
+         * by the CSS selector enclosElem.
+         * @param {Array<string>} displayText An array of strings whose text we
+         * want to display.
+         * @param {string} encloseElem This is the CSS selector of the enclosing element
+         * in which we want to place the displayText elements.
+         */
+        function randomizedSpanPlacement(displayText, enclosElem) {
+          const RAND_THRESHOLD = 50;  // after 50 times, most likely there's just no more space left
+
+          //  get display area
+          const vpHeight = $(window).height();
+          const vpWidth = $(window).width();
+
+          var takenRanges = []; // these store the returned objects of getBoundingClientRect()
+
+          displayText.forEach(randomizeSpans);
+
+          /**
+           * @description The main procedure that does the DOM manipulations
+           * necessary to randomize span positions on the page. There are two
+           * restraints observed:
+           * 1. Each span must not overlap with another.
+           * 2. Each span must be placed WITHIN the range of the viewport.
+           * 3. If, after RAND_THRESHOLD iterations an appropriate position
+           * still hasn't been found, the current element that's being
+           * placed is abandoned, moving on to the next element. This means
+           * that the smaller the viewport (e.g. mobile devices), the longer
+           * the text, the higher its array index, the more likely it will
+           * be skipped.
+           * @param {string} trendingItem Text in the displayText array.
+           * @param {number} itemIndex
+           */
+          function randomizeSpans(trendingItem, itemIndex) {
+            var randomizeIterations = 0;
+
+            //  try to place a each span in a (1) non-overlapped space, and (2) within the viewport range
+            randomize:do {
+              if (randomizeIterations > RAND_THRESHOLD) return; // we stop placing elements
+
+              //  style text appropriately
+              var fontSize = 0;
+              var color = 0;
+
+              switch(itemIndex) {
+                case 0:
+                  fontSize = "36px";
+                  color = "#33691e";
+                  break;
+                case 1: case 2:
+                fontSize = "34px";
+                color = "#33691e";
+                break;
+                case 3: case 4:
+                fontSize = "32px";
+                color = "#33691e";
+                break;
+                case 5: case 6: case 7:
+                fontSize = "30px";
+                color = "#558b2f";
+                break;
+                case 8: case 9: case 10:
+                fontSize = "28px";
+                color = "#689f38";
+                break;
+                case 11: case 12: case 13:
+                fontSize = "26px";
+                color = "#7cb342";
+                break;
+                case 14: case 15: case 16:
+                fontSize = "24px";
+                color = "#8bc34a";
+                break;
+                case 17: case 18: case 19:
+                fontSize = "22px";
+                color = "#9ccc65";
+                break;
+                case 20: case 21: case 22:
+                fontSize = "20px";
+                color = "#aed581";
+                break;
+                default:
+                  fontSize = "18px";
+                  color = "#9fb883";
+                  break;
+              }
+
+              //  randomize an area for the text 60 because of navbar, the .95 to avoid it getting a little too close
+              var randomCoords = { x: getRandomInt(20, vpWidth * 0.95), y: getRandomInt(60, vpHeight * 0.95) };
+              var idSlug = "id-" + trendingItem.replace(/\s/g, "-");
+              var newSpan = $("<span id='" + idSlug + "'>" + trendingItem + "</span>").css({
+                'position': 'absolute',
+                'top': randomCoords.y,
+                'left': randomCoords.x,
+                'fontSize': fontSize,
+                'color': color
+              });
+
+              //  assume it's valid until it's not
+              $(enclosElem).append(newSpan); //  this is necessary to calculate the actual width and height
+
+              //  topLeft, topRight, btmLeft, btmRight
+              var spanProps = {
+                width: newSpan.width(),
+                height: newSpan.height(),
+                x: parseInt(newSpan.css('left').replace(/[^-\d\.]/g, '')),  // .css('left') returns units too
+                y: parseInt(newSpan.css('top').replace(/[^-\d\.]/g, '')),
+              };
+
+              //  case 1: if the element's text exceeds viewport space, do again
+              if (spanProps.x + spanProps.width > vpWidth || spanProps.y + spanProps.height > vpHeight) {
+                newSpan.remove();
+                randomizeIterations++;
+                continue randomize;
+              }
+
+              //  case 2: if element's space occupies another element's, do again
+              var rect1 = document.querySelector("#" + idSlug).getBoundingClientRect();
+
+              for (var index = 0; index < takenRanges.length; index++) {
+                if (overlaps(rect1, takenRanges[index])) {
+                  newSpan.remove();
+                  randomizeIterations++;
+                  continue randomize;
+                }
+              }
+
+              //  if there's no overlap, save that in takenRanges array
+              takenRanges.push(rect1);
+
+              //  break loop
+              break randomize;
+            } while(true);
+          }
+        }
+      </script>
+
+      <!--trending cloud area-->
+      <div class="trending-cloud"></div>
+    </div>
+  </div>
+
+<script>
+  //  originally here: trending.component.ts ngOnInit()
+  // $(document).ready(function() {
+  //   randomizedSpanPlacement(displayTextArr, '.trending-cloud');
+  // });
+  //
+  // const displayTextArr = ['Cary Moon', 'Anaheim Ducks', 'Paul LePage', 'Bond market', 'Rie Flair',
+  //   'Charlotte', 'Patient Protection', 'United States', 'Dustin Brown ', '30 for 30', 'Medicaid',
+  //   'Jenny Durkan', 'Los Angeles Kings', 'Reuters', 'Asia', 'Democratic party', 'North Carolina',
+  //   'WWE', 'LiAngelo Ball', 'Europe', 'ESPN', 'Nick Shore', 'Mayor of Charlotte', 'Lonzo Ball',
+  //   'California', 'European Union', 'Seattle', 'National Hockey League', 'University of California',
+  //   'Maine', 'Seattle Mayoral Election', 'UCLA Bruins', 'China', 'Jerry Brown ', '2017'];
+  //
+  // /**
+  //  * @description Takes two numbers and generates a random number
+  //  * between min and max [min, max).
+  //  * @param {number} min
+  //  * @param {number} max
+  //  * @return {number}
+  //  */
+  // function getRandomInt(min, max) {
+  //   min = Math.ceil(min);
+  //   max = Math.floor(max);
+  //   return Math.floor(Math.random() * (max - min)) + min;
+  // }
+  //
+  // /**
+  //  * @description Tests if two DOM elements overlap each other.
+  //  * @param {DOMRect} rect1 What's returned from element.getBoundingClientRect().
+  //  * It looks something like this:
+  //  * {bottom: number, height: number, left: number, right: number,
+  //      * top: number, width: number, x: number, y: number}
+  //  * Note that 'top, right, bottom, left' are NOT the same as the CSS properties.
+  //  * Bottom measures the pixel distance from the top of the screen, and right
+  //  * from the left. height = bottom - top, width = right - left.
+  //  * @param {DOMRect} rect2
+  //  * @return {boolean}
+  //  */
+  // function overlaps(rect1, rect2) {
+  //   const overlap = !(rect1.right < rect2.left ||
+  //     rect1.left > rect2.right ||
+  //     rect1.bottom < rect2.top ||
+  //     rect1.top > rect2.bottom);
+  //
+  //   return overlap;
+  // }
+  //
+  // /**
+  //  * @description This is the main routine that takes in an array of
+  //  * strings, and randomly places them in the block level element specified
+  //  * by the CSS selector enclosElem.
+  //  * @param {Array<string>} displayText An array of strings whose text we
+  //  * want to display.
+  //  * @param {string} encloseElem This is the CSS selector of the enclosing element
+  //  * in which we want to place the displayText elements.
+  //  */
+  // function randomizedSpanPlacement(displayText, enclosElem) {
+  //   const RAND_THRESHOLD = 50;  // after 50 times, most likely there's just no more space left
+  //
+  //   //  get display area
+  //   const vpHeight = $(window).height();
+  //   const vpWidth = $(window).width();
+  //
+  //   const takenRanges = []; // these store the returned objects of getBoundingClientRect()
+  //
+  //   displayText.forEach(randomizeSpans);
+  //
+  //   /**
+  //    * @description The main procedure that does the DOM manipulations
+  //    * necessary to randomize span positions on the page. There are two
+  //    * restraints observed:
+  //    * 1. Each span must not overlap with another.
+  //    * 2. Each span must be placed WITHIN the range of the viewport.
+  //    * 3. If, after RAND_THRESHOLD iterations an appropriate position
+  //    * still hasn't been found, the current element that's being
+  //    * placed is abandoned, moving on to the next element. This means
+  //    * that the smaller the viewport (e.g. mobile devices), the longer
+  //    * the text, the higher its array index, the more likely it will
+  //    * be skipped.
+  //    * @param {string} trendingItem Text in the displayText array.
+  //    * @param {number} itemIndex
+  //    */
+  //   function randomizeSpans(trendingItem, itemIndex) {
+  //     let randomizeIterations = 0;
+  //
+  //     //  try to place a each span in a (1) non-overlapped space, and (2) within the viewport range
+  //     randomize: do {
+  //       if (randomizeIterations > RAND_THRESHOLD) { return; } // we stop placing elements
+  //
+  //       //  style text appropriately
+  //       let fontSize = '';
+  //       let color = '';
+  //
+  //       switch (itemIndex) {
+  //         case 0:
+  //           fontSize = '36px';
+  //           color = '#33691e';
+  //           break;
+  //         case 1: case 2:
+  //         fontSize = '34px';
+  //         color = '#33691e';
+  //         break;
+  //         case 3: case 4:
+  //         fontSize = '32px';
+  //         color = '#33691e';
+  //         break;
+  //         case 5: case 6: case 7:
+  //         fontSize = '30px';
+  //         color = '#558b2f';
+  //         break;
+  //         case 8: case 9: case 10:
+  //         fontSize = '28px';
+  //         color = '#689f38';
+  //         break;
+  //         case 11: case 12: case 13:
+  //         fontSize = '26px';
+  //         color = '#7cb342';
+  //         break;
+  //         case 14: case 15: case 16:
+  //         fontSize = '24px';
+  //         color = '#8bc34a';
+  //         break;
+  //         case 17: case 18: case 19:
+  //         fontSize = '22px';
+  //         color = '#9ccc65';
+  //         break;
+  //         case 20: case 21: case 22:
+  //         fontSize = '20px';
+  //         color = '#aed581';
+  //         break;
+  //         default:
+  //           fontSize = '18px';
+  //           color = '#9fb883';
+  //           break;
+  //       }
+  //
+  //       //  randomize an area for the text 60 because of navbar, the .95 to avoid it getting a little too close
+  //       const randomCoords = { x: getRandomInt(20, vpWidth * 0.95), y: getRandomInt(60, vpHeight * 0.95) };
+  //       const idSlug = 'id-' + trendingItem.replace(/\s/g, '-');
+  //       const newSpan = $('<span id="' + idSlug + '">' + trendingItem + '</span>').css({
+  //         'position': 'absolute',
+  //         'top': randomCoords.y,
+  //         'left': randomCoords.x,
+  //         'fontSize': fontSize,
+  //         'color': color
+  //       });
+  //
+  //       //  assume it's valid until it's not
+  //       $(enclosElem).append(newSpan); //  this is necessary to calculate the actual width and height
+  //
+  //       //  topLeft, topRight, btmLeft, btmRight
+  //       const spanProps = {
+  //         width: newSpan.width(),
+  //         height: newSpan.height(),
+  //         x: parseInt(newSpan.css('left').replace(/[^-\d\.]/g, ''), 10),  // .css('left') returns units too
+  //         y: parseInt(newSpan.css('top').replace(/[^-\d\.]/g, ''), 10),
+  //       };
+  //
+  //       //  case 1: if the element's text exceeds viewport space, do again
+  //       if (spanProps.x + spanProps.width > vpWidth || spanProps.y + spanProps.height > vpHeight) {
+  //         newSpan.remove();
+  //         randomizeIterations++;
+  //         continue randomize;
+  //       }
+  //
+  //       //  case 2: if element's space occupies another element's, do again
+  //       const rect1 = document.querySelector('#' + idSlug).getBoundingClientRect();
+  //
+  //       for (let index = 0; index < takenRanges.length; index++) {
+  //         if (overlaps(rect1, takenRanges[index])) {
+  //           newSpan.remove();
+  //           randomizeIterations++;
+  //           continue randomize;
+  //         }
+  //       }
+  //
+  //       //  if there's no overlap, save that in takenRanges array
+  //       takenRanges.push(rect1);
+  //
+  //       //  break loop
+  //       break randomize;
+  //     } while (true);
+  //   }
+  // }
+</script>
+</body>
+</html>

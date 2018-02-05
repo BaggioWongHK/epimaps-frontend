@@ -1,0 +1,13 @@
+<!--trending cloud area-->
+<div class="trending-cloud" [@fadeIn] > <!-- appTagCloud [tags]="tags">-->
+  <ng-template #fullText>{{(currentTag === currentQuery && errorMessage) ? errorMessage : currentTag}}</ng-template>
+  <span *ngFor="let tag of tags; let tagPopularity = index"
+        appTagCloud
+        [tagPopularity]="tagPopularity"
+        [tagName]="tag"
+        [occupiedDOMRects]="occupiedDOMRects"
+        (click)="doSearch(tag)"
+        (mouseenter)="setCurrentTag(tag)"
+        [ngbTooltip]="fullText"
+        placement="top">{{ tag }}</span>
+</div>

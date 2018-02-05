@@ -1,0 +1,1243 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>epimap documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">epimap documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">epimap documentation</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/NavbarComponent.html" >NavbarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SearchComponent.html" >SearchComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SummaryComponent.html" >SummaryComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeComponent.html" >TreeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeComponent.html"  data-type="entity-link" class="active" >TreeNodeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeExpandedComponent.html" >TreeNodeExpandedComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TreeNodeMobileComponent.html" >TreeNodeMobileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TrendingComponent.html" >TrendingComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/TagCloudDirective.html" >TagCloudDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/CurrentTree.html" >CurrentTree</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HTTPResponse.html" >HTTPResponse</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/TagStyle.html" >TagStyle</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/TreeNode.html" >TreeNode</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/ApiService.html" >ApiService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/CommunicationService.html" >CommunicationService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/SummaryService.html" >SummaryService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/TreeService.html" >TreeService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+                    <li class="divider"></li>
+                    <li class="copyright">
+                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                        <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                            </a>
+                    </li>
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">epimap documentation</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/NavbarComponent.html" >NavbarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SearchComponent.html" >SearchComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SummaryComponent.html" >SummaryComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeComponent.html" >TreeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeComponent.html"  data-type="entity-link" class="active" >TreeNodeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeExpandedComponent.html" >TreeNodeExpandedComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TreeNodeMobileComponent.html" >TreeNodeMobileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TrendingComponent.html" >TrendingComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/TagCloudDirective.html" >TagCloudDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/CurrentTree.html" >CurrentTree</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HTTPResponse.html" >HTTPResponse</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/TagStyle.html" >TagStyle</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/TreeNode.html" >TreeNode</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/ApiService.html" >ApiService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/CommunicationService.html" >CommunicationService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/SummaryService.html" >SummaryService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/TreeService.html" >TreeService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../routes.html" ><span class="fa fa-code-fork"></span>Routes</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                           <li class="copyright">
+                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                                               <img src="..//images/compodoc-vectorise.svg" class="img-responsive">
+                                   </a>
+                           </li>
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TreeNodeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
+    </li>
+
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/tree-node/tree-node.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-tree-node</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>tree-node.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./tree-node.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#flipped">flipped</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#flipCard">flipCard</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showSummary">showSummary</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#showTree">showTree</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#hasChildren">hasChildren</a>
+                            </li>
+                            <li>
+                                <a href="#hasURL">hasURL</a>
+                            </li>
+                            <li>
+                                <a href="#index">index</a>
+                            </li>
+                            <li>
+                                <a href="#title">title</a>
+                            </li>
+                            <li>
+                                <a href="#url">url</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(treeService: <a href="../injectables/TreeService.html">TreeService</a>, communication: <a href="../injectables/CommunicationService.html">CommunicationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, api: <a href="../injectables/ApiService.html">ApiService</a>, summaryService: <a href="../injectables/SummaryService.html">SummaryService</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/tree-node/tree-node.component.ts:22</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>treeService</td>
+                                                      <td>
+                                                                <code><a href="../injectables/TreeService.html" target="_self" >TreeService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>communication</td>
+                                                      <td>
+                                                                <code><a href="../injectables/CommunicationService.html" target="_self" >CommunicationService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>router</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>api</td>
+                                                      <td>
+                                                                <code><a href="../injectables/ApiService.html" target="_self" >ApiService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>summaryService</td>
+                                                      <td>
+                                                                <code><a href="../injectables/SummaryService.html" target="_self" >SummaryService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="hasChildren"></a>
+                            <code>hasChildren</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/tree-node/tree-node.component.ts:21</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="hasURL"></a>
+                            <code>hasURL</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/tree-node/tree-node.component.ts:20</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="index"></a>
+                            <code>index</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/tree-node/tree-node.component.ts:22</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="title"></a>
+                            <code>title</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/tree-node/tree-node.component.ts:18</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="url"></a>
+                            <code>url</code>
+                        </td>
+                        <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/tree-node/tree-node.component.ts:19</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="flipCard"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                flipCard
+                                </b>
+                                <a href="#flipCard"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>flipCard()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/tree-node/tree-node.component.ts:34</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="ngOnInit"></a>
+                            <span class="name">
+                                <b>
+                                ngOnInit
+                                </b>
+                                <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>ngOnInit()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/tree-node/tree-node.component.ts:29</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="showSummary"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                showSummary
+                                </b>
+                                <a href="#showSummary"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>showSummary(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/tree-node/tree-node.component.ts:62</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="showTree"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Public</span>
+                                showTree
+                                </b>
+                                <a href="#showTree"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>showTree(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/tree-node/tree-node.component.ts:47</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="inputs">
+                Properties
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="flipped"></a>
+                            <span class="name">
+                                <b>
+                                flipped
+                                </b>
+                                <a href="#flipped"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>flipped:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>false</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/tree-node/tree-node.component.ts:17</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+    </section>
+
+</div>
+
+
+    <div class="tab-pane fade tab-source-code" id="c-source">
+        <pre class="line-numbers"><code class="language-typescript">import {Component, Input, OnInit} from &#x27;@angular/core&#x27;;
+import { fadeIn } from &#x27;../animations/fade.in&#x27;;
+import {TreeService} from &#x27;../tree.service&#x27;;
+import {CommunicationService} from &#x27;../communication/communication.service&#x27;;
+import {Router} from &#x27;@angular/router&#x27;;
+import {ApiService} from &#x27;../api.service&#x27;;
+import {SummaryService} from &#x27;../summary.service&#x27;;
+import {forkJoin} from &#x27;rxjs/observable/forkJoin&#x27;;
+
+@Component({
+  selector: &#x27;app-tree-node&#x27;,
+  templateUrl: &#x27;./tree-node.component.html&#x27;,
+  styleUrls: [&#x27;./tree-node.component.css&#x27;],
+  animations: [ fadeIn ]
+})
+export class TreeNodeComponent implements OnInit {
+  flipped &#x3D; false;
+  @Input() title: string;
+  @Input() url: string;
+  @Input() hasURL: boolean;
+  @Input() hasChildren: boolean;
+  @Input() index: number;
+
+  constructor(private treeService: TreeService,
+              private communication: CommunicationService,
+              private router: Router,
+              private api: ApiService,
+              private summaryService: SummaryService) { }
+  ngOnInit() { }
+
+  /**
+   * @description Flips the card.
+   */
+  public flipCard() {
+    if (this.flipped) {
+      this.flipped &#x3D; false;
+    } else {
+      this.flipped &#x3D; true;
+    }
+  }
+
+  /**
+   * @description This moves down a level in the tree,
+   * shows new node component titles on the tree page.
+   * @param {any} event
+   */
+  public showTree(event: any) {
+    event.stopPropagation();
+    this.treeService.currentTree.addTreeIndex(this.index);
+    this.communication.emitEvent(&#x27;changeTitles&#x27;);
+  }
+
+  /**
+   * @description This shows the summary attached to the
+   * Wikipedia article of the search term. When clicked,
+   * spinner is shown, we get the canonical URL of the
+   * article, and then the summary and thumbnail. When
+   * both the summary and thumbnail are fetched, and
+   * they&#x27;re not empty, navigate to the summary page.
+   * @param event
+   */
+  public showSummary(event: any) {
+    event.stopPropagation();
+
+    this.communication.emitEvent({name: &#x27;showSpinner&#x27;});
+
+    const searchTerm &#x3D; this.url.split(&#x27;/&#x27;)[2];
+
+    this.api._getCanonicalURL(searchTerm).subscribe((urlResponse) &#x3D;&gt; { // can&#x27;t use this.url because it&#x27;s not canonical, which is needed for the API, nor this.title because that&#x27;s human friendly, not specific enough (compare &#x27;bureau&#x27; to &#x27;Ministry (government department)&#x27;)
+      this.summaryService.setURL(urlResponse.data);
+
+      const obs1 &#x3D; this.api.getSummarySA(urlResponse.data);
+      const obs2 &#x3D; this.api.getThumbnailSA(urlResponse.data);
+
+      forkJoin(obs1, obs2).subscribe(([summaryResponse, thumbnailResponse]) &#x3D;&gt; {
+        if (summaryResponse.data &amp;&amp; summaryResponse.data !&#x3D;&#x3D; &#x27;&#x27;) {
+          this.summaryService.setSummary(summaryResponse.data);
+        }
+
+        if (thumbnailResponse.data &amp;&amp; thumbnailResponse.data !&#x3D;&#x3D; &#x27;&#x27;) {
+          this.summaryService.setThumbnail(thumbnailResponse.data);
+        }
+
+        if (this.summaryService.getSummary() &amp;&amp; this.summaryService.getSummary() !&#x3D;&#x3D; &#x27;&#x27;) {
+          this.communication.emitEvent({name: &#x27;hideSpinner&#x27;});
+          this.router.navigate([&#x27;/summary&#x27;]);
+        }
+      });
+    });
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;card text-white&quot;
+   (click)&#x3D;&quot;flipCard()&quot;
+   [ngClass]&#x3D;&quot;{&#x27;bottom-pixel-fix&#x27;: flipped}&quot;
+&gt;
+  &lt;div *ngIf&#x3D;&quot;flipped&quot; class&#x3D;&quot;card-body flipped&quot; [@fadeIn]&gt;
+    &lt;span class&#x3D;&quot;fa-stack fa-lg&quot;&gt;
+      &lt;i class&#x3D;&quot;fa fa-circle fa-stack-2x background-circle&quot;&gt;&lt;/i&gt;
+      &lt;i class&#x3D;&quot;fa fa-tree fa-stack-1x fa-inverse&quot;
+         [ngClass]&#x3D;&quot;{&#x27;grayed-button&#x27;: !hasChildren}&quot;
+         (click)&#x3D;&quot;(hasChildren) ? showTree($event) : null&quot;
+      &gt;&lt;/i&gt;
+    &lt;/span&gt;
+    &lt;div class&#x3D;&quot;vertical-line&quot;&gt;&amp;nbsp;&lt;/div&gt;
+    &lt;span class&#x3D;&quot;fa-stack fa-lg&quot;&gt;
+      &lt;i class&#x3D;&quot;fa fa-circle fa-stack-2x background-circle&quot;&gt;&lt;/i&gt;
+      &lt;i class&#x3D;&quot;fa fa-info fa-stack-1x fa-inverse&quot;
+         [ngClass]&#x3D;&quot;{&#x27;grayed-button&#x27;: !hasURL}&quot;
+         (click)&#x3D;&quot;(hasURL) ? showSummary($event) : null&quot;&gt;&lt;/i&gt;
+    &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;ng-template #fullText&gt;{{title}}&lt;/ng-template&gt;
+  &lt;div *ngIf&#x3D;&quot;!flipped&quot; class&#x3D;&quot;card-body&quot; [@fadeIn]
+       placement&#x3D;&quot;bottom&quot;
+       [ngbTooltip]&#x3D;&quot;fullText&quot;
+       container&#x3D;&quot;body&quot;&gt;
+    &lt;p class&#x3D;&quot;card-text&quot;&gt;{{ title }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="card text-white"   (click)="flipCard()"   [ngClass]="{\'bottom-pixel-fix\': flipped}">  <div *ngIf="flipped" class="card-body flipped" [@fadeIn]>    <span class="fa-stack fa-lg">      <i class="fa fa-circle fa-stack-2x background-circle"></i>      <i class="fa fa-tree fa-stack-1x fa-inverse"         [ngClass]="{\'grayed-button\': !hasChildren}"         (click)="(hasChildren) ? showTree($event) : null"      ></i>    </span>    <div class="vertical-line">&nbsp;</div>    <span class="fa-stack fa-lg">      <i class="fa fa-circle fa-stack-2x background-circle"></i>      <i class="fa fa-info fa-stack-1x fa-inverse"         [ngClass]="{\'grayed-button\': !hasURL}"         (click)="(hasURL) ? showSummary($event) : null"></i>    </span>  </div>  <ng-template #fullText>{{title}}</ng-template>  <div *ngIf="!flipped" class="card-body" [@fadeIn]       placement="bottom"       [ngbTooltip]="fullText"       container="body">    <p class="card-text">{{ title }}</p>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'NavbarComponent', 'selector': 'app-navbar'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SummaryComponent', 'selector': 'app-summary'},{'name': 'TreeComponent', 'selector': 'app-tree'},{'name': 'TreeNodeComponent', 'selector': 'app-tree-node'},{'name': 'TreeNodeExpandedComponent', 'selector': 'app-tree-node-expanded'},{'name': 'TreeNodeMobileComponent', 'selector': 'app-tree-node-mobile'},{'name': 'TrendingComponent', 'selector': 'app-trending'}];
+    var DIRECTIVES = [{'name': 'TagCloudDirective', 'selector': '[appTagCloud]'}];
+    var ACTUAL_COMPONENT = {'name': 'TreeNodeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,69 @@
+.card {
+  background-color: #33691EA0;
+  width: 200px;
+  height: 70px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:not(:hover), .card:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.background-circle {
+  color: #333333;
+}
+
+.flipped {
+  padding: 1em;
+}
+
+.flipped i {
+  bottom: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.flipped i:hover {
+  transform: scale(1.2);
+}
+
+.flipped i:active {
+  transform: scale(0.9);
+}
+
+.flipped span:nth-child(1) i{
+  left: -20px;
+}
+
+.flipped span:nth-child(3) i{
+  left: 20px;
+}
+
+.vertical-line {
+  height: 40px;
+  width: 1px;
+  border-left: 1px dashed black;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+}
+
+.bottom-pixel-fix {
+  bottom: 2px;
+}
+
+.grayed-button {
+  color: darkgray;
+}

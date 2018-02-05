@@ -1,0 +1,49 @@
+.project-logo {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.search-box {
+  height: calc(100vh - 53px - 68px - 100px - 30px); /** navbar, hidden bar, logo, search margin **/
+  margin-top: 30px;
+  text-align: center;
+}
+
+.search-box > input {
+  background-color: #FFFFFF7A;
+  border-radius: 8px;
+  border: 1px solid #558B2F;
+  color: #558B2F;
+  height: 50px;
+  outline: none;
+  padding: 10px;
+  width: 300px;
+  font-size: inherit;
+  transition: all .2s ease-in-out;
+}
+
+.search-box > input:focus {
+  background-color: #c8e6c9ba;
+}
+
+.warning-box {
+  position: relative;
+  top: 20px;
+  width: 300px;
+  margin: auto;
+  text-align: left;
+  transition: all .2s ease-in-out;
+}
+
+.alert-success {
+  position: relative;
+  top: 20px;
+  width: 300px;
+  margin: auto;
+  text-align: left;
+  transition: all .2s ease-in-out;
+}
+
+.warning-box button {
+  outline: none;
+}

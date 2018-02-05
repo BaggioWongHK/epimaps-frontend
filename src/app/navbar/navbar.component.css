@@ -1,0 +1,123 @@
+@media (max-width: 575px) {
+  .nav-bar i, .nav-separator {
+    margin-right: 10px;
+  }
+
+  .breadcrumbs, .breadcrumbs-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .nav-bar i, .nav-separator {
+    margin-right: 20px;
+  }
+}
+
+.hide-breadcrumbs-bar {
+  display: none;
+}
+
+.nav-bar {
+  text-align: right;
+}
+
+.nav-bar i {
+  margin-top: 20px;
+}
+
+.nav-bar svg {
+  float: left;
+  margin-top: 20px;
+}
+
+.hide-breadcrumbs {
+  float: right;
+  margin-top: 10px;
+}
+
+.breadcrumbs {
+  background-color: #ffffffd0;
+  list-style: none;
+  padding: 0.75rem 1rem;
+}
+
+.breadcrumbs > i {
+  position: relative;
+  top: -7px;
+}
+
+.breadcrumbs .breadcrumb-div {
+  display: inline-block;
+}
+
+.breadcrumbs svg:nth-child(even) { /* level-separator-level-separator */
+  position: relative;
+  bottom: 3px;
+}
+
+.nav-separator {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.page-switcher, .page-switcher-nav {
+  display: inline-block;
+}
+
+nav > a#trending:hover {
+  text-decoration: none;
+}
+
+nav > a#home {
+  float: left;
+}
+
+.breadcrumbs > i, .breadcrumbs svg:nth-child(even) {
+  transition: all .2s ease-in-out;
+}
+
+.breadcrumbs i:hover, .breadcrumbs svg:nth-child(even):hover {
+  transform: scale(1.2);
+  color: #2e7d32;
+}
+
+.breadcrumbs i:active, .breadcrumbs svg:nth-child(even):active {
+  transform: scale(0.8);
+  color: #1b5e20;
+}
+
+.nav-bar i {
+  transition: all .2s ease-in-out;
+  color: black;
+}
+
+.nav-bar i:hover {
+  transform: scale(1.2);
+  color: #2e7d32;
+}
+
+.nav-bar i:active {
+  transform: scale(0.8);
+  color: #1b5e20;
+}
+
+.nav-bar-logo {
+  transition: all .2s ease-in-out;
+}
+
+.nav-bar-logo:hover {
+  margin-left: 20px;
+}
+
+.nav-bar-logo:active {
+  margin-left: 10px;
+}
+
+.fa-spin {
+  font-size: 32px;
+}
+
+.fa-spin:hover {
+  color: black !important;
+}

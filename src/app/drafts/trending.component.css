@@ -1,0 +1,17 @@
+.background-layer-opacity {
+  background-color: #FFFFFFCC;
+}
+
+.trending-cloud {
+  display: inline-block;
+  font-family: 'Cormorant Garamond', serif;
+  height: calc(100vh - 53px - 40px - 10px); /** navbar, top and btm margins, extra **/
+  margin: 20px auto;
+  width: 95%;
+}
+
+.trending-cloud > span:first-child {
+  left: 100px;
+  position: relative;
+  top: 20px;
+}
